@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- AI & Agent Specific ---
+# 保護你的 API Keys (OpenAI, Gemini 等)
+.env
+.env.local
+.env.*.local
+.agent
+
+# 如果你有下載大型模型權重 (如 YOLO .pt 或 .weights 檔)
+# 這些檔案太大不適合上傳 GitHub
+*.pt
+*.weights
+*.h5
+*.onnx
+
+# Python 虛擬環境 (如果你有混合使用 Python 寫 Agent 腳本)
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- Build & OS ---
+# 如果你有用一些編譯加速工具
+.eslintcache
+.stylelintcache
+
+# --- Personal ---
+cv/
