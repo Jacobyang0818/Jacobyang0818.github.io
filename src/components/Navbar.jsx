@@ -7,6 +7,7 @@ const navLinks = [
   { to: '/experience',  label: '工作經歷' },
   { to: '/projects',    label: '專案' },
   { to: '/referees',    label: '推薦人' },
+  { to: '/cv',          label: '經歷簡介' },
 ]
 
 export default function Navbar() {
@@ -28,14 +29,22 @@ export default function Navbar() {
         width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
         {/* Logo */}
-        <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+        <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
           <div style={{
-            width: '34px', height: '34px', borderRadius: '8px',
-            background: 'linear-gradient(135deg, #2563EB, #16A34A)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '0.95rem', fontWeight: '800', color: '#fff',
-          }}>J</div>
-          <span style={{ fontWeight: '700', fontSize: '1rem', color: '#1A1A2E', letterSpacing: '-0.01em' }}>
+            background: '#2563EB', // Blue matching the theme's active accents
+            color: '#fff',
+            width: '32px',
+            height: '32px',
+            borderRadius: '6px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '1.05rem',
+            fontWeight: '800',
+          }}>
+            J
+          </div>
+          <span style={{ fontWeight: '700', fontSize: '1.05rem', color: '#1A1A2E', letterSpacing: '-0.01em' }}>
             Jacob Yang
           </span>
         </NavLink>

@@ -35,7 +35,7 @@ const contactInfo = [
         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" />
       </svg>
     ),
-    label: '新竹市竹北',
+    label: '新竹縣竹北市',
     href: null,
   },
   {
@@ -87,7 +87,7 @@ export default function Home() {
                 楊明勳 <span style={{ color: '#D1D5DB', fontWeight: '300' }}>·</span> Jacob Yang
               </h1>
               <p style={{ fontSize: '1.05rem', fontWeight: '600', color: '#2563EB', marginBottom: '1.25rem' }}>
-                AI 架構師 &amp; 資料工程師
+                機器學習 / AI 工程師
               </p>
 
               {/* Contact Grid */}
@@ -152,24 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Highlights strip ── */}
-      <section style={{ background: '#fff', borderTop: '1px solid #E5E7EB', borderBottom: '1px solid #E5E7EB' }}>
-        <div style={{ maxWidth: '880px', margin: '0 auto', padding: '3rem 1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
-          {[
-            { color: '#2563EB', label: 'NYCU AI 架構師課程', desc: '強化 AI 系統設計與企業級部署能力' },
-            { color: '#16A34A', label: 'LLM & RAG 系統設計', desc: '整合 LangChain、LlamaIndex 構建 RAG pipeline' },
-            { color: '#2563EB', label: 'Kaggle 競賽 Top 20%', desc: '文本分類與醫療影像識別競賽成果' },
-          ].map((h, i) => (
-            <div key={i} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
-              <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: h.color, flexShrink: 0, marginTop: '2px' }} />
-              <div>
-                <p style={{ fontWeight: '700', fontSize: '0.9rem', color: '#1A1A2E', marginBottom: '4px' }}>{h.label}</p>
-                <p style={{ fontSize: '0.82rem', color: '#6B7280', lineHeight: '1.6' }}>{h.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+
     </div>
   )
 }

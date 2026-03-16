@@ -2,36 +2,47 @@
 const referees = [
   {
     id: 1,
-    name: '指導教授',
-    nameNote: '（詳細姓名可提供給有興趣的雇主）',
-    title: '教授',
-    org: '國立清華大學 工業工程與工程管理學系',
-    relation: '碩士論文指導教授',
+    name: 'Wei-Chang Yeh',
+    nameNote: '',
+    title: 'Chair Professor',
+    org: 'NTHU University (國立清華大學)',
+    relation: '指導教授',
     contact: '可依需求提供',
-    description: '在清大碩士期間，於電腦視覺、資料分析與先進製程控制研究上給予指導與支持，並提供論文研究的方向建議。',
+    description: '在清大碩士期間，於電腦視覺、最佳化方法與資料分析上給予指導與支持，並提供論文研究的方向建議。',
     color: 'blue',
   },
   {
     id: 2,
-    name: '業界主管',
-    nameNote: '（詳細姓名可提供給有興趣的雇主）',
-    title: '專案主管',
-    org: 'Wholetech System Hitech Co., Ltd.',
-    relation: '直屬主管（2021–2022）',
+    name: 'Po-Chung Huang',
+    nameNote: '',
+    title: 'Professor',
+    org: 'NTHU University (國立清華大學)',
+    relation: '學校教授',
     contact: '可依需求提供',
-    description: '在 Wholetech 任職期間直屬主管，可就本人在半導體設備專案管理、跨部門協調與現場工程能力提供具體評價。',
-    color: 'green',
+    description: '於國立清華大學就讀期間的教授，可針對學術能力與學習態度提供具體評價。',
+    color: 'blue',
   },
   {
     id: 3,
-    name: 'AI 課程講師',
-    nameNote: '（詳細資訊可依需求提供）',
-    title: 'AI 架構師課程講師',
-    org: '國立陽明交通大學 (NYCU) AI 架構師課程',
-    relation: '修課學生關係',
+    name: 'Shiaw-Meng Chang',
+    nameNote: '',
+    title: 'Manager',
+    org: 'AOT, Inc.',
+    relation: '研究計畫指導人',
     contact: '可依需求提供',
-    description: '目前修習 NYCU AI 架構師課程，可就本人在 AI 系統設計、LLM 應用及架構規劃上的學習表現與能力發展提供參考。',
-    color: 'blue',
+    description: '曾參與之研究計畫指導人，可就本人在專案執行、跨領域技術整合及問題解決能力提供專業見解。',
+    color: 'green',
+  },
+  {
+    id: 4,
+    name: 'Yung-Chiao Chen',
+    nameNote: '',
+    title: 'Manager',
+    org: 'Yong Chi Co., Ltd.',
+    relation: '工作主管',
+    contact: '可依需求提供',
+    description: '曾任職期間之直屬主管，可就本人在專案管理、實際工程交付以及職場跨部門協調能力提供具體評價。',
+    color: 'green',
   },
 ]
 
@@ -50,7 +61,7 @@ export default function Referees() {
         }}>
           <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#92400E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '2px' }}>
-              <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/>
+              <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" /><line x1="12" x2="12" y1="9" y2="13" /><line x1="12" x2="12.01" y1="17" y2="17" />
             </svg>
             <p style={{ fontSize: '0.83rem', color: '#92400E', lineHeight: '1.7' }}>
               基於隱私保護，本頁僅顯示推薦人的職稱與機構資訊。如您有意進一步了解，請透過 Email 聯絡，
@@ -72,7 +83,7 @@ export default function Referees() {
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={ref.color === 'green' ? '#16A34A' : '#2563EB'} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
                   </svg>
                 </div>
 
@@ -92,7 +103,7 @@ export default function Referees() {
                     </span>
                     <span className="badge badge-gray">
                       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
-                        <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        <rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                       </svg>
                       聯絡方式：{ref.contact}
                     </span>
@@ -113,7 +124,7 @@ export default function Referees() {
           </p>
           <a href="mailto:gary860818@gmail.com?subject=推薦人聯絡資訊索取" className="btn-primary" style={{ width: 'fit-content' }}>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              <rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
             gary860818@gmail.com
           </a>
